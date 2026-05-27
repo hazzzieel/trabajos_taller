@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS2</title>
+     <style>
+        button{
+            width: 100px;
+            height: 30px;
+            background-color: rgb(155, 25, 25);
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: aliceblue;
+
+        }
+    </style>
+</head>
+<body>
+    <button id="btn_saludar">Saludar</button>
+    <button id="btn_hola">Saludar</button>
+    <p id="saludo">Hola</p>
+    <script>
+        const boton=document.getElementById("btn_saludar");
+        const saludo=document.getElementById("saludo")
+        const boton_hola=document.getElementById("btn_hola")
+        boton.addEventListener("click",function(){
+            /* alert("Hola, soy Mendoza");*/
+            saludo.textContent="Chau"
+            
+            boton("")
+        })
+    </script>
+</body>
+</html>
